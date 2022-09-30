@@ -1,0 +1,37 @@
+\hypertarget{_s_e_d_8h_source}{}\doxysection{SED.\+h}
+\label{_s_e_d_8h_source}\index{C:/Users/Bapn/c c++ projects/Atelier c++/bank\_atelierCpp/SED.h@{C:/Users/Bapn/c c++ projects/Atelier c++/bank\_atelierCpp/SED.h}}
+\mbox{\hyperlink{_s_e_d_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef SED\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define SED\_H}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <queue>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_event_8h}{Event.h}}"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{28 \textcolor{keyword}{class }\mbox{\hyperlink{class_s_e_d}{SED}}\{}
+\DoxyCodeLine{29     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{30         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_s_e_d_a83922b4618c35ec1e0f96699d7ed1572}{currentTime}}; }
+\DoxyCodeLine{31         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_s_e_d_aa9469a690c8fe08f4e14887a533de2de}{totalWaitTime}}; }
+\DoxyCodeLine{32         priority\_queue<Event*, vector<Event*>, \mbox{\hyperlink{class_event_comparator}{EventComparator}}> \mbox{\hyperlink{class_s_e_d_aff6d46f6b5f88831d97be8f34065e2c3}{schedule}}; }
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{keyword}{public}:}
+\DoxyCodeLine{41         \mbox{\hyperlink{class_s_e_d_a7f529fdb951c6cc0a0b33b5acadc0029}{SED}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{49         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_s_e_d_aeda7e80307f4a47dc66360458da76af3}{start}}();}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{58         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_s_e_d_a882d45694b61bcf0e01e0af361e485b2}{add}}(\mbox{\hyperlink{class_event}{Event}} *e);}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{67         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_s_e_d_a8600fee064736c6c9e2d993ef6b462f9}{getCurrentTime}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{76         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_s_e_d_afcbb435a6c1e38b6d03e397a67765b55}{provideWaitTimeEntry}}(\textcolor{keywordtype}{double} time);}
+\DoxyCodeLine{77 \};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

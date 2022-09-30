@@ -1,0 +1,76 @@
+\hypertarget{class_arrival}{}\doxysection{Arrival Class Reference}
+\label{class_arrival}\index{Arrival@{Arrival}}
+
+
+Type d\textquotesingle{}événement représentant l\textquotesingle{}arrivée d\textquotesingle{}un client. Cette class est une dérivée d\textquotesingle{}\mbox{\hyperlink{class_event}{Event}}.  
+
+
+
+
+{\ttfamily \#include $<$Arrival.\+h$>$}
+
+Inheritance diagram for Arrival\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_arrival}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_arrival_a6e4508d9f15a684385640bb8b5c061b4}\label{class_arrival_a6e4508d9f15a684385640bb8b5c061b4}} 
+{\bfseries Arrival} (const \mbox{\hyperlink{class_arrival}{Arrival}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Pointeur vers la \mbox{\hyperlink{class_bank}{Bank}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_arrival_a8fce2ace5d7f0366daefcd01abf66b70}{Arrival}} (double \mbox{\hyperlink{class_event_a7cf2572f1124c9700c89ff9f01b311bf}{time}}, \mbox{\hyperlink{class_bank}{Bank}} $\ast$const bank)
+\begin{DoxyCompactList}\small\item\em Produit une instance d\textquotesingle{} \mbox{\hyperlink{class_arrival}{Arrival}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_arrival_ab4dc02499c4df6caf987f5317a1f9456}{process}} ()
+\begin{DoxyCompactList}\small\item\em Redéfinition de la méthode virtual de la classe mère \mbox{\hyperlink{class_event}{Event}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Type d\textquotesingle{}événement représentant l\textquotesingle{}arrivée d\textquotesingle{}un client. Cette class est une dérivée d\textquotesingle{}\mbox{\hyperlink{class_event}{Event}}. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_arrival_a8fce2ace5d7f0366daefcd01abf66b70}\label{class_arrival_a8fce2ace5d7f0366daefcd01abf66b70}} 
+\index{Arrival@{Arrival}!Arrival@{Arrival}}
+\index{Arrival@{Arrival}!Arrival@{Arrival}}
+\doxysubsubsection{\texorpdfstring{Arrival()}{Arrival()}}
+{\footnotesize\ttfamily Arrival\+::\+Arrival (\begin{DoxyParamCaption}\item[{double}]{time,  }\item[{\mbox{\hyperlink{class_bank}{Bank}} $\ast$const}]{bank }\end{DoxyParamCaption})}
+
+
+
+Produit une instance d\textquotesingle{} \mbox{\hyperlink{class_arrival}{Arrival}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & \+: Le temps de déclanchement de l\textquotesingle{}événement \\
+\hline
+{\em bank} & \+: Pointeur vers \mbox{\hyperlink{class_bank}{Bank}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_arrival_ab4dc02499c4df6caf987f5317a1f9456}\label{class_arrival_ab4dc02499c4df6caf987f5317a1f9456}} 
+\index{Arrival@{Arrival}!process@{process}}
+\index{process@{process}!Arrival@{Arrival}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void Arrival\+::process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Redéfinition de la méthode virtual de la classe mère \mbox{\hyperlink{class_event}{Event}}. 
+
+Elle crée un nouveau client, l\textquotesingle{}assigne à un caissier libre, ou à défaut l\textquotesingle{}envoie dans la file d\textquotesingle{}attente Elle prédit une nouvelle arrivée en utilisant la loi de \mbox{\hyperlink{class_poisson}{Poisson}} 
+
+Implements \mbox{\hyperlink{class_event_aacafad7eb94c6b182f307751765c63ac}{Event}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_arrival_8h}{Arrival.\+h}}\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_arrival_8cpp}{Arrival.\+cpp}}\end{DoxyCompactItemize}

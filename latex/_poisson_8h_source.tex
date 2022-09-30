@@ -1,0 +1,26 @@
+\hypertarget{_poisson_8h_source}{}\doxysection{Poisson.\+h}
+\label{_poisson_8h_source}\index{C:/Users/Bapn/c c++ projects/Atelier c++/bank\_atelierCpp/Poisson.h@{C:/Users/Bapn/c c++ projects/Atelier c++/bank\_atelierCpp/Poisson.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef \_\_Poisson\_h}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define \_\_Poisson\_h}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <math.h>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <sys/types.h>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{class_poisson}{Poisson}} \{}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{public}:}
+\DoxyCodeLine{12   \textcolor{keyword}{static} \textcolor{keywordtype}{void} init(\textcolor{keywordtype}{int} seed = 0) \{}
+\DoxyCodeLine{13     srand(seed ? seed : getpid()); }
+\DoxyCodeLine{14   \}}
+\DoxyCodeLine{15   \textcolor{keyword}{static} \textcolor{keywordtype}{double} next(\textcolor{keywordtype}{double} moy = 1.0) \{}
+\DoxyCodeLine{16     \textcolor{keywordflow}{return} -\/log(((\textcolor{keywordtype}{double})rand()/RAND\_MAX))*moy;}
+\DoxyCodeLine{17   \}}
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

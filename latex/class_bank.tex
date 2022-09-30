@@ -1,0 +1,165 @@
+\hypertarget{class_bank}{}\doxysection{Bank Class Reference}
+\label{class_bank}\index{Bank@{Bank}}
+
+
+Cette class simule une banque, avec le nombre de caissiers passés en paramètres.  
+
+
+
+
+{\ttfamily \#include $<$Bank.\+h$>$}
+
+Inheritance diagram for Bank\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bank}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bank_a8ea4652a1fa23c2ffce1a461aeb665ae}{Bank}} (int cashier\+Count, double average\+Service\+Time, double expected\+Duration, double interval)
+\begin{DoxyCompactList}\small\item\em Crée une instance de bank. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bank_a54931a7886fb43cf1bebf4eef208c555}{get\+Cashier\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour le nombre de caissier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cashier}{Cashier}} $\ast$ \mbox{\hyperlink{class_bank_a400735eb5fd11bbc91d494f1c8cdda40}{free\+Cashier}} ()
+\begin{DoxyCompactList}\small\item\em Renvoie le premier caissier libre, si aucun n\textquotesingle{}est disponible renvoie un caissier vide. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_queue}{Queue}} $\ast$ \mbox{\hyperlink{class_bank_a65440ef011ccaadb88d6ed10e6ecae52}{get\+Queue}} ()
+\begin{DoxyCompactList}\small\item\em Getter de file d\textquotesingle{}attente. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cashier}{Cashier}} $\ast$ \mbox{\hyperlink{class_bank_a2e51266219c2f674bdf15c1cdf1ea7e4}{get\+Cashiers}} ()
+\begin{DoxyCompactList}\small\item\em Getter vers la liste des caissiers. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_bank_a0d7ca1e09009bdd4794becc9b0e101ec}{get\+Interval}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour l\textquotesingle{}attribut interval. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_bank_af50626fb0d34b53c1d8e47000985f9ae}{get\+Expected\+Duration}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour l\textquotesingle{}attribut expected\+Duration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bank_a00174ff19b48bab34e4ceca8e5886fa4}{print\+Results}} ()
+\begin{DoxyCompactList}\small\item\em Affiche le résultat de la simulation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Cette class simule une banque, avec le nombre de caissiers passés en paramètres. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bank_a8ea4652a1fa23c2ffce1a461aeb665ae}\label{class_bank_a8ea4652a1fa23c2ffce1a461aeb665ae}} 
+\index{Bank@{Bank}!Bank@{Bank}}
+\index{Bank@{Bank}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{Bank()}{Bank()}}
+{\footnotesize\ttfamily Bank\+::\+Bank (\begin{DoxyParamCaption}\item[{int}]{cashier\+Count,  }\item[{double}]{average\+Service\+Time,  }\item[{double}]{expected\+Duration,  }\item[{double}]{interval }\end{DoxyParamCaption})}
+
+
+
+Crée une instance de bank. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cashier\+Count} & \+: Nombre de caissiers \\
+\hline
+{\em average\+Service\+Time} & \+: Temps de service moyen \\
+\hline
+{\em expected\+Duration} & durée initiale de la simulation \\
+\hline
+{\em interval} & Intervalle entre les arrivées \\
+\hline
+{\em cashier\+Count} & Nombre de caissiers \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bank_a400735eb5fd11bbc91d494f1c8cdda40}\label{class_bank_a400735eb5fd11bbc91d494f1c8cdda40}} 
+\index{Bank@{Bank}!freeCashier@{freeCashier}}
+\index{freeCashier@{freeCashier}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{freeCashier()}{freeCashier()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cashier}{Cashier}} $\ast$ Bank\+::free\+Cashier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renvoie le premier caissier libre, si aucun n\textquotesingle{}est disponible renvoie un caissier vide. 
+
+\begin{DoxyReturn}{Returns}
+Caissier, sa valeur peut être initialisée ou vide 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_a54931a7886fb43cf1bebf4eef208c555}\label{class_bank_a54931a7886fb43cf1bebf4eef208c555}} 
+\index{Bank@{Bank}!getCashierCount@{getCashierCount}}
+\index{getCashierCount@{getCashierCount}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{getCashierCount()}{getCashierCount()}}
+{\footnotesize\ttfamily int Bank\+::get\+Cashier\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour le nombre de caissier. 
+
+\begin{DoxyReturn}{Returns}
+Nombre de caissiers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_a2e51266219c2f674bdf15c1cdf1ea7e4}\label{class_bank_a2e51266219c2f674bdf15c1cdf1ea7e4}} 
+\index{Bank@{Bank}!getCashiers@{getCashiers}}
+\index{getCashiers@{getCashiers}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{getCashiers()}{getCashiers()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cashier}{Cashier}} $\ast$ Bank\+::get\+Cashiers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter vers la liste des caissiers. 
+
+\begin{DoxyReturn}{Returns}
+Liste des caissiers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_af50626fb0d34b53c1d8e47000985f9ae}\label{class_bank_af50626fb0d34b53c1d8e47000985f9ae}} 
+\index{Bank@{Bank}!getExpectedDuration@{getExpectedDuration}}
+\index{getExpectedDuration@{getExpectedDuration}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{getExpectedDuration()}{getExpectedDuration()}}
+{\footnotesize\ttfamily double Bank\+::get\+Expected\+Duration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour l\textquotesingle{}attribut expected\+Duration. 
+
+\begin{DoxyReturn}{Returns}
+attribut expected\+Duration 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_a0d7ca1e09009bdd4794becc9b0e101ec}\label{class_bank_a0d7ca1e09009bdd4794becc9b0e101ec}} 
+\index{Bank@{Bank}!getInterval@{getInterval}}
+\index{getInterval@{getInterval}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{getInterval()}{getInterval()}}
+{\footnotesize\ttfamily double Bank\+::get\+Interval (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour l\textquotesingle{}attribut interval. 
+
+\begin{DoxyReturn}{Returns}
+attribut interval 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_a65440ef011ccaadb88d6ed10e6ecae52}\label{class_bank_a65440ef011ccaadb88d6ed10e6ecae52}} 
+\index{Bank@{Bank}!getQueue@{getQueue}}
+\index{getQueue@{getQueue}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{getQueue()}{getQueue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_queue}{Queue}} $\ast$ Bank\+::get\+Queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter de file d\textquotesingle{}attente. 
+
+\begin{DoxyReturn}{Returns}
+Pointeur vers la file d\textquotesingle{}attente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bank_a00174ff19b48bab34e4ceca8e5886fa4}\label{class_bank_a00174ff19b48bab34e4ceca8e5886fa4}} 
+\index{Bank@{Bank}!printResults@{printResults}}
+\index{printResults@{printResults}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{printResults()}{printResults()}}
+{\footnotesize\ttfamily void Bank\+::print\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Affiche le résultat de la simulation. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_bank_8h}{Bank.\+h}}\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_bank_8cpp}{Bank.\+cpp}}\end{DoxyCompactItemize}

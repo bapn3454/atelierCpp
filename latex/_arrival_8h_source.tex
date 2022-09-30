@@ -1,0 +1,29 @@
+\hypertarget{_arrival_8h_source}{}\doxysection{Arrival.\+h}
+\label{_arrival_8h_source}\index{C:/Users/Bapn/c c++ projects/Atelier c++/bank\_atelierCpp/Arrival.h@{C:/Users/Bapn/c c++ projects/Atelier c++/bank\_atelierCpp/Arrival.h}}
+\mbox{\hyperlink{_arrival_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#ifndef ARRIVAL\_H}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define ARRIVAL\_H}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_event_8h}{Event.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_bank}{Bank}};}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{21 \textcolor{keyword}{class }\mbox{\hyperlink{class_arrival}{Arrival}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_event}{Event}}\{}
+\DoxyCodeLine{22     \textcolor{keyword}{private}:}
+\DoxyCodeLine{23         \mbox{\hyperlink{class_bank}{Bank}} *\textcolor{keyword}{const} bank; }
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     \textcolor{keyword}{public}:}
+\DoxyCodeLine{26         \textcolor{comment}{//Suppression du Copy Constructor}}
+\DoxyCodeLine{27         \mbox{\hyperlink{class_arrival_a6e4508d9f15a684385640bb8b5c061b4}{Arrival}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_arrival}{Arrival}}\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{34         \mbox{\hyperlink{class_arrival}{Arrival}}(\textcolor{keywordtype}{double} \mbox{\hyperlink{class_event_a7cf2572f1124c9700c89ff9f01b311bf}{time}}, \mbox{\hyperlink{class_bank}{Bank}} *\textcolor{keyword}{const} bank);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{43         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_arrival_ab4dc02499c4df6caf987f5317a1f9456}{process}}();}
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

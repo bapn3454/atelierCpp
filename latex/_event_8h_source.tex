@@ -1,0 +1,36 @@
+\hypertarget{_event_8h_source}{}\doxysection{Event.\+h}
+\label{_event_8h_source}\index{C:/Users/Bapn/c c++ projects/Atelier c++/bank\_atelierCpp/Event.h@{C:/Users/Bapn/c c++ projects/Atelier c++/bank\_atelierCpp/Event.h}}
+\mbox{\hyperlink{_event_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#ifndef EVENT\_H}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define EVENT\_H}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_s_e_d}{SED}};}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_event}{Event}}\{}
+\DoxyCodeLine{25     \textcolor{keyword}{protected}:}
+\DoxyCodeLine{26         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_event_a7cf2572f1124c9700c89ff9f01b311bf}{time}};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28     \textcolor{keyword}{public}:}
+\DoxyCodeLine{36         \mbox{\hyperlink{class_event}{Event}}(\textcolor{keywordtype}{double} hour);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38         \textcolor{keyword}{virtual} \mbox{\hyperlink{class_event}{\string~Event}}();}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{47         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_event_ab05b23f7cc8d126efcbf189062f3b275}{getTime}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{55         \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_event_aacafad7eb94c6b182f307751765c63ac}{process}}() = 0;}
+\DoxyCodeLine{56 \};}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{64 \textcolor{keyword}{class }\mbox{\hyperlink{class_event_comparator}{EventComparator}} \{}
+\DoxyCodeLine{65     \textcolor{keyword}{public}:}
+\DoxyCodeLine{66       \textcolor{keywordtype}{int} operator() ( \mbox{\hyperlink{class_event}{Event}} *e1, \mbox{\hyperlink{class_event}{Event}} *e2) \{}
+\DoxyCodeLine{67         \textcolor{keywordflow}{return} e1-\/>\mbox{\hyperlink{class_event_ab05b23f7cc8d126efcbf189062f3b275}{getTime}}() > e2-\/>\mbox{\hyperlink{class_event_ab05b23f7cc8d126efcbf189062f3b275}{getTime}}();}
+\DoxyCodeLine{68       \}}
+\DoxyCodeLine{69 \};}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

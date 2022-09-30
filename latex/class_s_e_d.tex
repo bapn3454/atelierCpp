@@ -1,0 +1,122 @@
+\hypertarget{class_s_e_d}{}\doxysection{SED Class Reference}
+\label{class_s_e_d}\index{SED@{SED}}
+
+
+Simulation qui gérer les evenements.  
+
+
+
+
+{\ttfamily \#include $<$SED.\+h$>$}
+
+Inheritance diagram for SED\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_s_e_d}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_s_e_d_a7f529fdb951c6cc0a0b33b5acadc0029}{SED}} ()
+\begin{DoxyCompactList}\small\item\em COnstructeur de \mbox{\hyperlink{class_s_e_d}{SED}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_e_d_aeda7e80307f4a47dc66360458da76af3}{start}} ()
+\begin{DoxyCompactList}\small\item\em lance la simulation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_e_d_a882d45694b61bcf0e01e0af361e485b2}{add}} (\mbox{\hyperlink{class_event}{Event}} $\ast$e)
+\begin{DoxyCompactList}\small\item\em Ajoute un evenement. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_s_e_d_a8600fee064736c6c9e2d993ef6b462f9}{get\+Current\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Getter pour l\textquotesingle{}heure actuelle. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_s_e_d_afcbb435a6c1e38b6d03e397a67765b55}{provide\+Wait\+Time\+Entry}} (double time)
+\begin{DoxyCompactList}\small\item\em Recalcule le temps total d\textquotesingle{}attente en y ajoutant le temps passé en paramètre. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_s_e_d_a83922b4618c35ec1e0f96699d7ed1572}\label{class_s_e_d_a83922b4618c35ec1e0f96699d7ed1572}} 
+double {\bfseries current\+Time}
+\begin{DoxyCompactList}\small\item\em Heure actuelle de la simultion. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_e_d_aa9469a690c8fe08f4e14887a533de2de}\label{class_s_e_d_aa9469a690c8fe08f4e14887a533de2de}} 
+double {\bfseries total\+Wait\+Time}
+\begin{DoxyCompactList}\small\item\em Temps total d\textquotesingle{}attente de tous les evenements non traités. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_s_e_d_aff6d46f6b5f88831d97be8f34065e2c3}\label{class_s_e_d_aff6d46f6b5f88831d97be8f34065e2c3}} 
+priority\+\_\+queue$<$ \mbox{\hyperlink{class_event}{Event}} $\ast$, vector$<$ \mbox{\hyperlink{class_event}{Event}} $\ast$ $>$, \mbox{\hyperlink{class_event_comparator}{Event\+Comparator}} $>$ {\bfseries schedule}
+\begin{DoxyCompactList}\small\item\em structure de données utilisée pour sauvegarder et ordonner les evenements \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simulation qui gérer les evenements. 
+
+Utilise une pirority\+\_\+queue pour qauvegarder des evenements, les ordonner selon leur heure de déclanchement dans l\textquotesingle{}ordre ascendant. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_s_e_d_a7f529fdb951c6cc0a0b33b5acadc0029}\label{class_s_e_d_a7f529fdb951c6cc0a0b33b5acadc0029}} 
+\index{SED@{SED}!SED@{SED}}
+\index{SED@{SED}!SED@{SED}}
+\doxysubsubsection{\texorpdfstring{SED()}{SED()}}
+{\footnotesize\ttfamily SED\+::\+SED (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+COnstructeur de \mbox{\hyperlink{class_s_e_d}{SED}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_s_e_d_a882d45694b61bcf0e01e0af361e485b2}\label{class_s_e_d_a882d45694b61bcf0e01e0af361e485b2}} 
+\index{SED@{SED}!add@{add}}
+\index{add@{add}!SED@{SED}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void SED\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_event}{Event}} $\ast$}]{e }\end{DoxyParamCaption})}
+
+
+
+Ajoute un evenement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Pointeur vers l\textquotesingle{}evenement à ajouter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_e_d_a8600fee064736c6c9e2d993ef6b462f9}\label{class_s_e_d_a8600fee064736c6c9e2d993ef6b462f9}} 
+\index{SED@{SED}!getCurrentTime@{getCurrentTime}}
+\index{getCurrentTime@{getCurrentTime}!SED@{SED}}
+\doxysubsubsection{\texorpdfstring{getCurrentTime()}{getCurrentTime()}}
+{\footnotesize\ttfamily double SED\+::get\+Current\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Getter pour l\textquotesingle{}heure actuelle. 
+
+\begin{DoxyReturn}{Returns}
+Renvoie l\textquotesingle{}heure actuelle dans la simulation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_s_e_d_afcbb435a6c1e38b6d03e397a67765b55}\label{class_s_e_d_afcbb435a6c1e38b6d03e397a67765b55}} 
+\index{SED@{SED}!provideWaitTimeEntry@{provideWaitTimeEntry}}
+\index{provideWaitTimeEntry@{provideWaitTimeEntry}!SED@{SED}}
+\doxysubsubsection{\texorpdfstring{provideWaitTimeEntry()}{provideWaitTimeEntry()}}
+{\footnotesize\ttfamily void SED\+::provide\+Wait\+Time\+Entry (\begin{DoxyParamCaption}\item[{double}]{time }\end{DoxyParamCaption})}
+
+
+
+Recalcule le temps total d\textquotesingle{}attente en y ajoutant le temps passé en paramètre. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & Le temps à ajouter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_s_e_d_aeda7e80307f4a47dc66360458da76af3}\label{class_s_e_d_aeda7e80307f4a47dc66360458da76af3}} 
+\index{SED@{SED}!start@{start}}
+\index{start@{start}!SED@{SED}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void SED\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+lance la simulation. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_s_e_d_8h}{SED.\+h}}\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_s_e_d_8cpp}{SED.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,127 @@
+\hypertarget{class_queue}{}\doxysection{Queue Class Reference}
+\label{class_queue}\index{Queue@{Queue}}
+
+
+Représentation de la file d\textquotesingle{}attente.  
+
+
+
+
+{\ttfamily \#include $<$Queue.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_queue_aa8b765bf69d82f9f839bf8e60f4ace2d}{Queue}} (\mbox{\hyperlink{class_bank}{Bank}} $\ast$bank)
+\begin{DoxyCompactList}\small\item\em Constructeur de la file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_queue_ac52fd0970c24510a4d0d3086b027021a}{get\+Max\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour l\textquotesingle{}attribut max\+Length. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_queue_afc73e60fa330498b5efdbf267d4508c2}{get\+Average\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Calcule la taille moyenne de la file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_queue_a65d9b23c23c917faa44981539bc34be7}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em vérifie si la file est vide ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_queue_a6eea2de2a278e37595772c1ed96917e0}{add}} (\mbox{\hyperlink{class_client}{Client}} client)
+\begin{DoxyCompactList}\small\item\em Ajoute un client dans la file et modifie les attributs liées à la file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_client}{Client}} \mbox{\hyperlink{class_queue_aabd322bc0a7961cd5303ccbf024bac38}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Retire le premier client arrivé qui n\textquotesingle{}a pas encore été servi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Représentation de la file d\textquotesingle{}attente. 
+
+la classe \mbox{\hyperlink{class_queue}{Queue}} est une structure de données qui suit une loi de départ FIFO, elle est une file d\textquotesingle{}attente ou les clients sont servis dans l\textquotesingle{}ordre de leur arrivée 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_queue_aa8b765bf69d82f9f839bf8e60f4ace2d}\label{class_queue_aa8b765bf69d82f9f839bf8e60f4ace2d}} 
+\index{Queue@{Queue}!Queue@{Queue}}
+\index{Queue@{Queue}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{Queue()}{Queue()}}
+{\footnotesize\ttfamily Queue\+::\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bank}{Bank}} $\ast$}]{bank }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_bank}{Bank}}} & Pointeur vers la banque \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_queue_a6eea2de2a278e37595772c1ed96917e0}\label{class_queue_a6eea2de2a278e37595772c1ed96917e0}} 
+\index{Queue@{Queue}!add@{add}}
+\index{add@{add}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Queue\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}}}]{client }\end{DoxyParamCaption})}
+
+
+
+Ajoute un client dans la file et modifie les attributs liées à la file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & Le client à ajouter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_queue_afc73e60fa330498b5efdbf267d4508c2}\label{class_queue_afc73e60fa330498b5efdbf267d4508c2}} 
+\index{Queue@{Queue}!getAverageLength@{getAverageLength}}
+\index{getAverageLength@{getAverageLength}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{getAverageLength()}{getAverageLength()}}
+{\footnotesize\ttfamily double Queue\+::get\+Average\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule la taille moyenne de la file. 
+
+\begin{DoxyReturn}{Returns}
+la taille moyenne de la file 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_queue_ac52fd0970c24510a4d0d3086b027021a}\label{class_queue_ac52fd0970c24510a4d0d3086b027021a}} 
+\index{Queue@{Queue}!getMaxLength@{getMaxLength}}
+\index{getMaxLength@{getMaxLength}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{getMaxLength()}{getMaxLength()}}
+{\footnotesize\ttfamily int Queue\+::get\+Max\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour l\textquotesingle{}attribut max\+Length. 
+
+\begin{DoxyReturn}{Returns}
+attribut max\+Length 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_queue_a65d9b23c23c917faa44981539bc34be7}\label{class_queue_a65d9b23c23c917faa44981539bc34be7}} 
+\index{Queue@{Queue}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Queue\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+vérifie si la file est vide ~\newline
+ 
+
+\begin{DoxyReturn}{Returns}
+True si la file est vide, false sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_queue_aabd322bc0a7961cd5303ccbf024bac38}\label{class_queue_aabd322bc0a7961cd5303ccbf024bac38}} 
+\index{Queue@{Queue}!pop@{pop}}
+\index{pop@{pop}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_client}{Client}} Queue\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retire le premier client arrivé qui n\textquotesingle{}a pas encore été servi. 
+
+\begin{DoxyReturn}{Returns}
+Le plus ancien client de la file 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_queue_8h}{Queue.\+h}}\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_queue_8cpp}{Queue.\+cpp}}\end{DoxyCompactItemize}

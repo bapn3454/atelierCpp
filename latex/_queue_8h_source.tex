@@ -1,0 +1,45 @@
+\hypertarget{_queue_8h_source}{}\doxysection{Queue.\+h}
+\label{_queue_8h_source}\index{C:/Users/Bapn/c c++ projects/Atelier c++/bank\_atelierCpp/Queue.h@{C:/Users/Bapn/c c++ projects/Atelier c++/bank\_atelierCpp/Queue.h}}
+\mbox{\hyperlink{_queue_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef Queue\_H}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define Queue\_H}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_client_8h}{Client.h}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <iostream>} }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <deque>} }
+\DoxyCodeLine{14   }
+\DoxyCodeLine{15 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_bank}{Bank}}; }
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{29 \textcolor{keyword}{class }\mbox{\hyperlink{class_queue}{Queue}}\{}
+\DoxyCodeLine{30     private :}
+\DoxyCodeLine{31         deque<Client> clients; }
+\DoxyCodeLine{32         \textcolor{keywordtype}{int} maxLength; }
+\DoxyCodeLine{33         \textcolor{keywordtype}{double} averageLength;  }
+\DoxyCodeLine{34         \mbox{\hyperlink{class_bank}{Bank}} *bank; }
+\DoxyCodeLine{35     public :}
+\DoxyCodeLine{40         \mbox{\hyperlink{class_queue}{Queue}}(\mbox{\hyperlink{class_bank}{Bank}} *bank);}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 }
+\DoxyCodeLine{48         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_queue_ac52fd0970c24510a4d0d3086b027021a}{getMaxLength}}();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50 }
+\DoxyCodeLine{55         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_queue_afc73e60fa330498b5efdbf267d4508c2}{getAverageLength}}();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 }
+\DoxyCodeLine{62         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_queue_a65d9b23c23c917faa44981539bc34be7}{isEmpty}}();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64 }
+\DoxyCodeLine{69         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_queue_a6eea2de2a278e37595772c1ed96917e0}{add}}(\mbox{\hyperlink{class_client}{Client}} client);}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71         }
+\DoxyCodeLine{76         \mbox{\hyperlink{class_client}{Client}} \mbox{\hyperlink{class_queue_aabd322bc0a7961cd5303ccbf024bac38}{pop}}();}
+\DoxyCodeLine{77 \};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

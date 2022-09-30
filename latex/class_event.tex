@@ -1,0 +1,91 @@
+\hypertarget{class_event}{}\doxysection{Event Class Reference}
+\label{class_event}\index{Event@{Event}}
+
+
+Représzntation de l\textquotesingle{}événement, cette classe est abstraite et sert de modèle pour d\textquotesingle{}autre classes qui vont représenter les evenements.  
+
+
+
+
+{\ttfamily \#include $<$Event.\+h$>$}
+
+Inheritance diagram for Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_event_a4cf3f158cf73204c9a1f9050e10c5568}{Event}} (double hour)
+\begin{DoxyCompactList}\small\item\em Constructeur, doit uniquement etre appelé depuis ses classes filles. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_event_ab05b23f7cc8d126efcbf189062f3b275}{get\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour l\textquotesingle{}attribut time. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_event_aacafad7eb94c6b182f307751765c63ac}{process}} ()=0
+\begin{DoxyCompactList}\small\item\em fonction Virutal, représente les actions à effectuer quand l\textquotesingle{}heure de l\textquotesingle{}événement arrive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_event_a7cf2572f1124c9700c89ff9f01b311bf}\label{class_event_a7cf2572f1124c9700c89ff9f01b311bf}} 
+double {\bfseries time}
+\begin{DoxyCompactList}\small\item\em Heure de l\textquotesingle{}événement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Représzntation de l\textquotesingle{}événement, cette classe est abstraite et sert de modèle pour d\textquotesingle{}autre classes qui vont représenter les evenements. 
+
+Représentation d\textquotesingle{}un événement dans la simulation, classe abstraite.
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_event_a4cf3f158cf73204c9a1f9050e10c5568}\label{class_event_a4cf3f158cf73204c9a1f9050e10c5568}} 
+\index{Event@{Event}!Event@{Event}}
+\index{Event@{Event}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{Event()}{Event()}}
+{\footnotesize\ttfamily Event\+::\+Event (\begin{DoxyParamCaption}\item[{double}]{hour }\end{DoxyParamCaption})}
+
+
+
+Constructeur, doit uniquement etre appelé depuis ses classes filles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hour} & Heure de l\textquotesingle{}événement \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_event_ab05b23f7cc8d126efcbf189062f3b275}\label{class_event_ab05b23f7cc8d126efcbf189062f3b275}} 
+\index{Event@{Event}!getTime@{getTime}}
+\index{getTime@{getTime}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily double Event\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour l\textquotesingle{}attribut time. 
+
+\begin{DoxyReturn}{Returns}
+attribut time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_event_aacafad7eb94c6b182f307751765c63ac}\label{class_event_aacafad7eb94c6b182f307751765c63ac}} 
+\index{Event@{Event}!process@{process}}
+\index{process@{process}!Event@{Event}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void Event\+::process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+fonction Virutal, représente les actions à effectuer quand l\textquotesingle{}heure de l\textquotesingle{}événement arrive. 
+
+
+
+Implemented in \mbox{\hyperlink{class_arrival_ab4dc02499c4df6caf987f5317a1f9456}{Arrival}}, and \mbox{\hyperlink{class_departure_aae6405bcf8a5c7987714d61d8735fa4a}{Departure}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_event_8h}{Event.\+h}}\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_event_8cpp}{Event.\+cpp}}\end{DoxyCompactItemize}

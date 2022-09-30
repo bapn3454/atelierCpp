@@ -1,0 +1,80 @@
+\hypertarget{class_departure}{}\doxysection{Departure Class Reference}
+\label{class_departure}\index{Departure@{Departure}}
+
+
+Type d\textquotesingle{}événement qui réprésente le départ d\textquotesingle{}un client. Cette classe est une dérivée d\textquotesingle{}\mbox{\hyperlink{class_event}{Event}}.  
+
+
+
+
+{\ttfamily \#include $<$Departure.\+h$>$}
+
+Inheritance diagram for Departure\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_departure}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_departure_a2786a9384f0d1bb5715a416a14732293}\label{class_departure_a2786a9384f0d1bb5715a416a14732293}} 
+{\bfseries Departure} (const \mbox{\hyperlink{class_departure}{Departure}} \&)=delete
+\item 
+\mbox{\hyperlink{class_departure_af8aafad587be4f32c1500959de0d9063}{Departure}} (\mbox{\hyperlink{class_client}{Client}} $\ast$const client, \mbox{\hyperlink{class_cashier}{Cashier}} $\ast$const cashier, double \mbox{\hyperlink{class_event_a7cf2572f1124c9700c89ff9f01b311bf}{time}}, \mbox{\hyperlink{class_bank}{Bank}} $\ast$const bank)
+\begin{DoxyCompactList}\small\item\em Construceur de \mbox{\hyperlink{class_departure}{Departure}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_departure_aae6405bcf8a5c7987714d61d8735fa4a}{process}} ()
+\begin{DoxyCompactList}\small\item\em Redéfinition de la méthode Virual d\textquotesingle{}\mbox{\hyperlink{class_event}{Event}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Type d\textquotesingle{}événement qui réprésente le départ d\textquotesingle{}un client. Cette classe est une dérivée d\textquotesingle{}\mbox{\hyperlink{class_event}{Event}}. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_departure_af8aafad587be4f32c1500959de0d9063}\label{class_departure_af8aafad587be4f32c1500959de0d9063}} 
+\index{Departure@{Departure}!Departure@{Departure}}
+\index{Departure@{Departure}!Departure@{Departure}}
+\doxysubsubsection{\texorpdfstring{Departure()}{Departure()}}
+{\footnotesize\ttfamily Departure\+::\+Departure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$const}]{client,  }\item[{\mbox{\hyperlink{class_cashier}{Cashier}} $\ast$const}]{cashier,  }\item[{double}]{time,  }\item[{\mbox{\hyperlink{class_bank}{Bank}} $\ast$const}]{bank }\end{DoxyParamCaption})}
+
+
+
+Construceur de \mbox{\hyperlink{class_departure}{Departure}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & \+: Le client qui a été servi \\
+\hline
+{\em cashier} & \+: Le caissier qui a servi le client \\
+\hline
+{\em time} & \+: Temps du depart \\
+\hline
+{\em bank} & \+: Pointeur vers la bank \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_departure_aae6405bcf8a5c7987714d61d8735fa4a}\label{class_departure_aae6405bcf8a5c7987714d61d8735fa4a}} 
+\index{Departure@{Departure}!process@{process}}
+\index{process@{process}!Departure@{Departure}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily void Departure\+::process (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Redéfinition de la méthode Virual d\textquotesingle{}\mbox{\hyperlink{class_event}{Event}}. 
+
+Vérifie si la file est vide, le caissier est libéré, sinon il reçoit un autre client 
+
+Implements \mbox{\hyperlink{class_event_aacafad7eb94c6b182f307751765c63ac}{Event}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_departure_8h}{Departure.\+h}}\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_departure_8cpp}{Departure.\+cpp}}\end{DoxyCompactItemize}

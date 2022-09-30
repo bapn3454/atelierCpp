@@ -1,0 +1,33 @@
+\hypertarget{_departure_8h_source}{}\doxysection{Departure.\+h}
+\label{_departure_8h_source}\index{C:/Users/Bapn/c c++ projects/Atelier c++/bank\_atelierCpp/Departure.h@{C:/Users/Bapn/c c++ projects/Atelier c++/bank\_atelierCpp/Departure.h}}
+\mbox{\hyperlink{_departure_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef DEPART\_H}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define DEPART\_H}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_event_8h}{Event.h}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_bank_8h}{Bank.h}}"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_cashier}{Cashier}};}
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_client}{Client}};}
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_bank}{Bank}};}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_departure}{Departure}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_event}{Event}}}
+\DoxyCodeLine{25 \{}
+\DoxyCodeLine{26     \textcolor{keyword}{private}:}
+\DoxyCodeLine{27         \mbox{\hyperlink{class_bank}{Bank}} *\textcolor{keyword}{const} bank; }
+\DoxyCodeLine{28         \mbox{\hyperlink{class_cashier}{Cashier}} *\textcolor{keyword}{const} cashier; }
+\DoxyCodeLine{29         \mbox{\hyperlink{class_client}{Client}} *\textcolor{keyword}{const} client; }
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keyword}{public}:}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_departure}{Departure}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_departure}{Departure}}\&) = \textcolor{keyword}{delete};}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{41         \mbox{\hyperlink{class_departure}{Departure}}(\mbox{\hyperlink{class_client}{Client}} *\textcolor{keyword}{const} client, \mbox{\hyperlink{class_cashier}{Cashier}} *\textcolor{keyword}{const} cashier, \textcolor{keywordtype}{double} \mbox{\hyperlink{class_event_a7cf2572f1124c9700c89ff9f01b311bf}{time}}, \mbox{\hyperlink{class_bank}{Bank}} *\textcolor{keyword}{const} bank);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{48         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_departure_aae6405bcf8a5c7987714d61d8735fa4a}{process}}();}
+\DoxyCodeLine{49 \};}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,149 @@
+\hypertarget{class_cashier}{}\doxysection{Cashier Class Reference}
+\label{class_cashier}\index{Cashier@{Cashier}}
+
+
+Cette classe représante les caissiers qui traiteront les evenements dans la banque.  
+
+
+
+
+{\ttfamily \#include $<$Cashier.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cashier_a9dd99a4a5f4c5295aaa4584b21e30aec}\label{class_cashier_a9dd99a4a5f4c5295aaa4584b21e30aec}} 
+{\bfseries Cashier} ()
+\begin{DoxyCompactList}\small\item\em constructeur \+: Crée un \char`\"{}faux\char`\"{} caissier \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cashier_a3e6ce894e1645d41753ca38a1c3fe2e7}{Cashier}} (double average\+Service\+Time, \mbox{\hyperlink{class_bank}{Bank}} $\ast$bank)
+\begin{DoxyCompactList}\small\item\em Crée une instance initialisée de Caissier. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_cashier_ac0c91ebe2a9ca9428537e79b82bfbe9f}{get\+Occupation\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Calcule le temps d\textquotesingle{}occupation. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_cashier_adef987c8dc2b7e2ef5b0af877b34b2ca}{get\+Client\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour le nombre de client servis. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_cashier_aa7ad7daa19ee0a709b8e2756465f50f6}{get\+Average\+Service\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour le temps de service moyen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cashier_a37d66e1a5f77c8f5cb8d77ef0b43e2e8}{is\+Available}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour l\textquotesingle{}attribut available. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cashier_a39f360af7e9501b718becb285d967873}{serve}} (\mbox{\hyperlink{class_client}{Client}} $\ast$client)
+\begin{DoxyCompactList}\small\item\em Sert un client, planifie son départ, et met à jour les stats de la simultion. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cashier_ac04b7595d1d7e51dd673590809cb5682}\label{class_cashier_ac04b7595d1d7e51dd673590809cb5682}} 
+void {\bfseries free} ()
+\begin{DoxyCompactList}\small\item\em Libère un caissier après avoir fini de servir un client. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cashier_a411c65846a8e5d70a3bb974a0f1ee5c4}{get\+Exists}} ()
+\begin{DoxyCompactList}\small\item\em Getter pour l\textquotesingle{}attribut exists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Cette classe représante les caissiers qui traiteront les evenements dans la banque. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cashier_a3e6ce894e1645d41753ca38a1c3fe2e7}\label{class_cashier_a3e6ce894e1645d41753ca38a1c3fe2e7}} 
+\index{Cashier@{Cashier}!Cashier@{Cashier}}
+\index{Cashier@{Cashier}!Cashier@{Cashier}}
+\doxysubsubsection{\texorpdfstring{Cashier()}{Cashier()}}
+{\footnotesize\ttfamily Cashier\+::\+Cashier (\begin{DoxyParamCaption}\item[{double}]{average\+Service\+Time,  }\item[{\mbox{\hyperlink{class_bank}{Bank}} $\ast$}]{bank }\end{DoxyParamCaption})}
+
+
+
+Crée une instance initialisée de Caissier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em average\+Service\+Time} & Temps moyen pour servir un client \\
+\hline
+{\em bank} & Pointeur vers la banque \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cashier_aa7ad7daa19ee0a709b8e2756465f50f6}\label{class_cashier_aa7ad7daa19ee0a709b8e2756465f50f6}} 
+\index{Cashier@{Cashier}!getAverageServiceTime@{getAverageServiceTime}}
+\index{getAverageServiceTime@{getAverageServiceTime}!Cashier@{Cashier}}
+\doxysubsubsection{\texorpdfstring{getAverageServiceTime()}{getAverageServiceTime()}}
+{\footnotesize\ttfamily double Cashier\+::get\+Average\+Service\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour le temps de service moyen. 
+
+\begin{DoxyReturn}{Returns}
+Temps de service moyen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cashier_adef987c8dc2b7e2ef5b0af877b34b2ca}\label{class_cashier_adef987c8dc2b7e2ef5b0af877b34b2ca}} 
+\index{Cashier@{Cashier}!getClientCount@{getClientCount}}
+\index{getClientCount@{getClientCount}!Cashier@{Cashier}}
+\doxysubsubsection{\texorpdfstring{getClientCount()}{getClientCount()}}
+{\footnotesize\ttfamily int Cashier\+::get\+Client\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour le nombre de client servis. 
+
+\begin{DoxyReturn}{Returns}
+Nombre de lcients servis 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cashier_a411c65846a8e5d70a3bb974a0f1ee5c4}\label{class_cashier_a411c65846a8e5d70a3bb974a0f1ee5c4}} 
+\index{Cashier@{Cashier}!getExists@{getExists}}
+\index{getExists@{getExists}!Cashier@{Cashier}}
+\doxysubsubsection{\texorpdfstring{getExists()}{getExists()}}
+{\footnotesize\ttfamily bool Cashier\+::get\+Exists (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour l\textquotesingle{}attribut exists. 
+
+\begin{DoxyReturn}{Returns}
+La valeur de l\textquotesingle{}attribut exists 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cashier_ac0c91ebe2a9ca9428537e79b82bfbe9f}\label{class_cashier_ac0c91ebe2a9ca9428537e79b82bfbe9f}} 
+\index{Cashier@{Cashier}!getOccupationRate@{getOccupationRate}}
+\index{getOccupationRate@{getOccupationRate}!Cashier@{Cashier}}
+\doxysubsubsection{\texorpdfstring{getOccupationRate()}{getOccupationRate()}}
+{\footnotesize\ttfamily double Cashier\+::get\+Occupation\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcule le temps d\textquotesingle{}occupation. 
+
+\begin{DoxyReturn}{Returns}
+Taux d\textquotesingle{}occupation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cashier_a37d66e1a5f77c8f5cb8d77ef0b43e2e8}\label{class_cashier_a37d66e1a5f77c8f5cb8d77ef0b43e2e8}} 
+\index{Cashier@{Cashier}!isAvailable@{isAvailable}}
+\index{isAvailable@{isAvailable}!Cashier@{Cashier}}
+\doxysubsubsection{\texorpdfstring{isAvailable()}{isAvailable()}}
+{\footnotesize\ttfamily bool Cashier\+::is\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter pour l\textquotesingle{}attribut available. 
+
+\begin{DoxyReturn}{Returns}
+return true si le caissier est libre, false sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cashier_a39f360af7e9501b718becb285d967873}\label{class_cashier_a39f360af7e9501b718becb285d967873}} 
+\index{Cashier@{Cashier}!serve@{serve}}
+\index{serve@{serve}!Cashier@{Cashier}}
+\doxysubsubsection{\texorpdfstring{serve()}{serve()}}
+{\footnotesize\ttfamily void Cashier\+::serve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_client}{Client}} $\ast$}]{client }\end{DoxyParamCaption})}
+
+
+
+Sert un client, planifie son départ, et met à jour les stats de la simultion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & \+: \mbox{\hyperlink{class_client}{Client}} ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_cashier_8h}{Cashier.\+h}}\item 
+C\+:/\+Users/\+Bapn/c c++ projects/\+Atelier c++/bank\+\_\+atelier\+Cpp/\mbox{\hyperlink{_cashier_8cpp}{Cashier.\+cpp}}\end{DoxyCompactItemize}
